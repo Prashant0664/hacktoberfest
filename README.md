@@ -27,7 +27,7 @@ Make your first PR! Add your profile, a blog, or any program under any language 
    ```
 8. Push to repository
    ```markdown
-   git push -u origin master
+   git push -u origin main
    ```
 10. Create Pull Request
 
@@ -54,7 +54,7 @@ git remote -v
 
 To pull any new changes from your parent repo simply run
 ```
-git merge upstream/master
+git merge upstream/main
 ```
 ---
 ## Note:
