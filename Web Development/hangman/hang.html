@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman</title>
+    <link rel="stylesheet" href="hangstyle.css">
+
+</head>
+
+<body>
+
+    <div
+        style="color:rgb(63, 13, 201); background-color: aquamarine; text-align: center;font-size: 0.6in; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+        <u>HANGMAN</u></div>
+    <br>
+    <div class="wrap"><button class="button" onclick="start()" type="button" id="strtbtn"> START / RESTART</button>
+    </div>
+    <br>
+    <div>
+        <p1 id="lines"></p1>
+    </div>
+    <canvas></canvas>
+    <div>
+        <p2 id="score"></p2>
+    </div>
+    <div>
+        <p3 id="highscore"></p3>
+    </div>
+    <p id="used"></p>
+
+
+    <div class="btn-group" id="btn-group">
+    </div>
+
+
+
+
+    <script src='hangscript.js'></script>
+
+</body>
+
+</html>
