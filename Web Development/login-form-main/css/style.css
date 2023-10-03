@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --redColor: #fb2525;
+  --hoverColor: #ffc107;
+}
+body{
+  background: url("https://pixy.org/src2/582/thumbs350/5826310.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  color:var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color:var(--blackColor);
+  opacity: 0.8;
+  width: 320px;
+  height: 420px;
+  padding: 70px 30px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.login-box i {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--redColor) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.login-box h1 {
+  text-align: center;
+  padding: 0 0 20px;
+  font-size: 22px;
+}
+
+.login-box span {
+  font-weight: bold;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+.login-box .text-box input[type="text"], input[type="password"]{
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--whiteColor);
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  color: var(--whiteColor);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.login-box .text-box input[type="submit"]{
+  color: var(--whiteColor);
+  background-color: var(--redColor);
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-box .text-box input[type="submit"]:hover{
+  background-color: var(--hoverColor);
+  color: var(--blackColor);
+}
+
+.login-box a{
+  text-decoration: none;
+  color:darkgrey;
+  display: block;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.login-box a:hover {
+  color: var(--hoverColor);
+}
